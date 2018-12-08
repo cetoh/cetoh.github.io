@@ -1,10 +1,9 @@
-var myImage = document.querySelector('img');
+var myImage = document.getElementById("profile");
 
-myImage.onclick = function() {
-    var mySrc = myImage.getAttribute('src');
-    if(mySrc === '\images\Senior-55.jpg') {
-      	myImage.setAttribute('src','\images\Senior-115.jpg');
+myImage.onclick = function pictureChange() {
+    if(myImage.getAttribute('src') == "Senior-55.jpg") {
+      	myImage.src = "Senior-115.jpg";
     } else {
-      	myImage.setAttribute('src','\images\Senior-55.jpg');
+      	myImage.src = "Senior-55.jpg";
     }
 }

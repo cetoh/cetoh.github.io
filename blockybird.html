@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Talks With Toh</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Podcast With Chris Toh">
+		<meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+		<!-- Font -->
+		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+		
+		<!-- Favorite Icon -->
+		<link rel="icon" type="image/png" href="images/twt.png">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Themify Icons -->
+		<link rel="stylesheet" href="css/themify-icons.css">
+		<!-- Owl carousel -->
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<!-- Main css -->
+		<link href="css/style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+		canvas {
+			padding:0;
+			margin: auto;
+			display: block;
+			border:1px solid #d3d3d3;
+			background-color: #f1f1f1;
+		}
+		</style>
+	</head>
+	
+<body>
+
+	<!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="index.html#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="index.html#features">FEATURES</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="index.html#gallery">GALLERY</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="index.html#support">SUPPORT</a> </li>
+								<li class="nav-item"> <a class="nav-link" href="about.html">ABOUT US</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="index.html#contact">CONTACT</a> </li>
+                                <li class="nav-item"><a href="https://anchor.fm/talks-with-toh" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>Blocky Bird</h1>
+            <p class="tagline">An HTML game based off a popular bird game</p>
+        </div>
+    </header>
+	
+	<br>
+	<div>
+		<canvas id="gameCanvas"> </canvas>
+	</div>
+	
+	<br>
+	<div style="display: flex; justify-content:center; align-items:center;">
+		<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)" class="btn btn-primary">ACCELERATE</button>
+		
+		
+	</div>
+	<div style="display: flex; justify-content:center; align-items:center;">
+		<p>Use the ACCELERATE button to stay in the air</p>
+	</div>
+	<div style="display: flex; justify-content:center; align-items:center;">
+		<p>How long can you stay alive?</p>
+	</div>
+
+	<!-- // end .section -->
+    <footer class="my-5 text-center">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>COPYRIGHT © 2020. ALL RIGHTS RESERVED. TALKS WITH TOH WEBSITE TEMPLATE BY <a href="https://colorlib.com">COLORLIB</a></small></p>
+
+        <small>
+            <a href="#" class="m-2">PRESS</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
+        </small>
+    </footer>
+	
+	
+	<!-- jQuery and Bootstrap -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+	
+	<script src="js/game.js" onload="startGame()"></script>
+</body>
+</html>

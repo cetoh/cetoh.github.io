@@ -644,9 +644,13 @@ header {
 /*  EMBED
 ----------------------*/
 .iframe-container {
+	display: flex;
+	justify-content: center;
+	align-items:center;
     position: relative;
     overflow: hidden;
-    padding-top: 30%;
+    padding-top: 20%;
+	padding-bottom: 20%;
 }
 
 .iframe-container iframe {

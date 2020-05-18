@@ -662,18 +662,4 @@ header {
   padding-top: 75%;
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media (max-width: 769px) {
-       .iframe-container {
-        width: 55%;
-        padding: 0% 2.5%;
-    }
-}
- 
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media (max-width: 479px) {
-    .iframe-container {
-      width: 90%;
-      padding: 0% 5%;
-    }
-}
+

@@ -646,7 +646,7 @@ header {
 .iframe-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
+    padding-top: 20%;
 }
 
 .iframe-container iframe {
@@ -658,8 +658,7 @@ header {
     border: 0;
 }
 
-.iframe-container-4x3 {
-  padding-top: 75%;
+/* If in mobile screen with maximum width 479px. The iPhone screen resolution is 320x480 px (except iPhone4, 640x960) */    
+@media only screen and (max-width: 479px){
+    .iframe-container { width: 90%; }
 }
-
-
